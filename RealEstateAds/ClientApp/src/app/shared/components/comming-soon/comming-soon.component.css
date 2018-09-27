@@ -1,0 +1,12 @@
+#comming-soon-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "Brush Script MT";
+  font-size: 100px;
+}
+
+  #comming-soon-container p {
+    margin-top: 123px;
+  }
