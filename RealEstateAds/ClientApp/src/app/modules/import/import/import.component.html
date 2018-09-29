@@ -1,0 +1,11 @@
+<div class="import">
+  <div class="import__title">
+    By Link
+  </div>
+  <div *ngFor="let linkBox of linkBoxes">
+    <import-link-box [imageSrc]="linkBox.imageSrc"
+                     [placeHolder]="linkBox.placeHolder"
+                     (submit)="alert($event)">
+    </import-link-box>
+  </div>
+</div>

@@ -9,18 +9,20 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { SharedModule } from './shared/shared.module';
 import { CommingSoonComponent } from './shared/components/comming-soon/comming-soon.component';
+import { ImportModule } from './modules/import/import.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavMenuComponent,
-    HomeComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
     SharedModule,
+    ImportModule,
     RouterModule.forRoot([
       { path: '', component: CommingSoonComponent, pathMatch: 'full' },
       { path: '**', component: CommingSoonComponent },

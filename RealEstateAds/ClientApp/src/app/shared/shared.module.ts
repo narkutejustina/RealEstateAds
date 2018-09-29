@@ -7,6 +7,6 @@ import { CommingSoonComponent } from './components/comming-soon/comming-soon.com
     CommonModule
   ],
   declarations: [CommingSoonComponent],
-  export: [CommingSoonComponent]
+  exports: [CommingSoonComponent]
 })
 export class SharedModule { }
